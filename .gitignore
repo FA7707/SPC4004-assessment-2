@@ -1,0 +1,36 @@
+# Dataset - large image folders (approx 3GB)
+HAM10000_images_part_1/
+HAM10000_images_part_2/
+HAM10000_metadata.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model outputs
+*.h5
+*.keras
+saved_models/
