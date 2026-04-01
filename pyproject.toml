@@ -1,0 +1,13 @@
+[project]
+name = "spc4004-skin-cancer-classification"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "tensorflow>=2.16.0",
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "scikit-learn>=1.4.0",
+    "Pillow>=10.2.0",
+]
