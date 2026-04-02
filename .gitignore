@@ -30,7 +30,8 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
-# Model outputs
+# Model outputs & experiment results
 *.h5
 *.keras
 saved_models/
+results/
