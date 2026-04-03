@@ -1,9 +1,24 @@
-# Dataset - large image folders (approx 3GB)
+# ==========================================
+# 1. DATASET (CRITICAL: Stay ignored to avoid 3GB push)
+# ==========================================
 HAM10000_images_part_1/
 HAM10000_images_part_2/
-HAM10000_metadata.csv
 
-# Python
+# ==========================================
+# 2. EXPERIMENT RESULTS (EXPLICITLY ALLOWED)
+# ==========================================
+# We tell Git NOT to ignore the results folder or the root PNGs
+!results/
+!results/*
+!confusion_matrix.png
+!training_curves.png
+
+# Allow all model weight files (assuming they are <100MB)
+!*.keras
+
+# ==========================================
+# 3. PYTHON BOILERPLATE
+# ==========================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -11,27 +26,17 @@ __pycache__/
 dist/
 build/
 *.egg
-
-# Virtual environments
 venv/
 env/
 .venv/
 
-# IDE
+# ==========================================
+# 4. IDE & SYSTEM FILES
+# ==========================================
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Jupyter
 .ipynb_checkpoints/
-
-# Model outputs & experiment results
-*.h5
-*.keras
-saved_models/
-results/
