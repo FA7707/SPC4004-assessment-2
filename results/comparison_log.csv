@@ -1,0 +1,6 @@
+run_id,description,optimizer,lr,batch_size,epochs_run,test_acc,val_loss,train_time_s
+1,"Baseline CNN — Adam lr=1e-3, bs=32, no augmentation",ADAM,0.001,32,25,0.7512,0.6758,1388.5
+2,"Adam lr=5e-4, BatchNormalization, bs=32",ADAM,0.0005,32,14,0.7073,0.7346,1400.3
+3,"Adam lr=5e-4, BN, RandomFlip + RandomRotation augmentation",ADAM,0.0005,32,25,0.7452,0.6536,2790.8
+4,"Adam lr=5e-4, BN, augmentation + class_weight balancing",ADAM,0.0005,32,31,0.6367,0.8647,3279.5
+5,"SGD Nesterov lr=1e-2, bs=64, BN, aug, class_weights, ReduceLROnPlateau",SGD,0.01,64,17,0.5569,0.9758,1812.2
